@@ -1,0 +1,60 @@
+
+ Linux terminal (GitBash) commands
+
+ 1) See where I am:
+
+oksana--- MINGW64 /c/QA_test
+$ pwd
+/c/QA_test
+
+oksana--- MINGW64 /c/QA_test
+$
+
+ 2) Create a folder:
+
+oksana--- MINGW64 /c/QA_test
+$ mkdir folder_1
+
+oksana--- MINGW64 /c/QA_test
+$ 
+
+ 3) Go to the folder:
+
+oksana--- MINGW64 /c/QA_test
+$ cd folder_1/
+
+oksana--- MINGW64 /c/QA_test/folder_1
+$
+
+ 4) Create 3 folders:
+
+oksana--- MINGW64 /c/QA_test
+$ mkdir folder_2 folder_3 folder_4
+
+oksana--- MINGW64 /c/QA_test
+$
+
+ 5) Go to any folder:
+
+oksana--- MINGW64 /c/QA_test
+$ cd folder_4
+
+oksana--- MINGW64 /c/QA_test/folder_4
+$
+ 
+ 6) Create 5 files (3 txt, 2 json):
+
+oksana--- MINGW64 /c/QA_test
+$ touch file_1.txt file_2.txt file_3.txt qwerty_1.json qwerty_2.json
+
+oksana--- MINGW64 /c/QA_test
+$
+
+ 7) Create 3 folders:
+
+oksana--- MINGW64 /c/QA_test
+$ mkdir folder_5 folder_6 folder_7
+
+oksana--- MINGW64 /c/QA_test
+$
+
