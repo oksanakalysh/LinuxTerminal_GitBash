@@ -1,60 +1,201 @@
-
  Linux terminal (GitBash) commands
 
- 1) See where I am:
+ 1. See where I am:
+pwd
 
-oksana--- MINGW64 /c/QA_test
-$ pwd
 /c/QA_test
 
-oksana--- MINGW64 /c/QA_test
-$
+ 2. Create a folder:
+mkdir
 
- 2) Create a folder:
+$ mkdir folder_1 
 
-oksana--- MINGW64 /c/QA_test
-$ mkdir folder_1
+ 3. Go to the folder:
+cd
 
-oksana--- MINGW64 /c/QA_test
-$ 
-
- 3) Go to the folder:
-
-oksana--- MINGW64 /c/QA_test
 $ cd folder_1/
 
-oksana--- MINGW64 /c/QA_test/folder_1
-$
+ 4. Create 3 folders:
+mkdir
 
- 4) Create 3 folders:
-
-oksana--- MINGW64 /c/QA_test
 $ mkdir folder_2 folder_3 folder_4
 
-oksana--- MINGW64 /c/QA_test
-$
+ 5. Go to any folder:
+cd
 
- 5) Go to any folder:
-
-oksana--- MINGW64 /c/QA_test
 $ cd folder_4
-
-oksana--- MINGW64 /c/QA_test/folder_4
-$
  
- 6) Create 5 files (3 txt, 2 json):
+ 6. Create 5 files (3 txt, 2 json):
+touch
 
-oksana--- MINGW64 /c/QA_test
 $ touch file_1.txt file_2.txt file_3.txt qwerty_1.json qwerty_2.json
 
-oksana--- MINGW64 /c/QA_test
-$
+ 7. Create 3 folders:
+mkdir
 
- 7) Create 3 folders:
-
-oksana--- MINGW64 /c/QA_test
 $ mkdir folder_5 folder_6 folder_7
 
-oksana--- MINGW64 /c/QA_test
-$
+ 8. List the contents of a folder:
+ ls -la
 
+$ ls -la
+total 16
+drwxr-xr-x 1 oksanakalysh 197121 0 May 23 22:40 ./
+drwxr-xr-x 1 oksanakalysh 197121 0 May 23 17:22 ../
+-rw-r--r-- 1 oksanakalysh 197121 0 May 23 22:36 file_1.txt
+-rw-r--r-- 1 oksanakalysh 197121 0 May 23 22:36 file_2.txt
+-rw-r--r-- 1 oksanakalysh 197121 0 May 23 22:36 file_3.txt
+drwxr-xr-x 1 oksanakalysh 197121 0 May 23 22:32 folder_1/
+drwxr-xr-x 1 oksanakalysh 197121 0 May 23 22:33 folder_2/
+drwxr-xr-x 1 oksanakalysh 197121 0 May 23 22:33 folder_3/
+drwxr-xr-x 1 oksanakalysh 197121 0 May 23 22:33 folder_4/
+drwxr-xr-x 1 oksanakalysh 197121 0 May 23 22:40 folder_5/
+drwxr-xr-x 1 oksanakalysh 197121 0 May 23 22:40 folder_6/
+drwxr-xr-x 1 oksanakalysh 197121 0 May 23 22:40 folder_7/
+-rw-r--r-- 1 oksanakalysh 197121 0 May 23 22:36 qwerty_1.json
+-rw-r--r-- 1 oksanakalysh 197121 0 May 23 22:36 qwerty_2.json
+
+ 9. + Open any txt file:
+vim
+~
+~
+~
+~
+~
+file_1.txt [unix] (22:36 23/05/2022)                                   0,0-1 All
+"file_1.txt" 0L, 0B
+
+ 10. + write something there, any text:
+ vim
+ 
+ HELLO!
+~
+~
+~
+file_1.txt[+] [unix] (22:36 23/05/2022)                                  1,7 All
+-- INSERT --
+
+ 11. + save and exit:
+esc + :wq
+
+ 12. Exit folder one level up:
+cd ../
+
+$ cd ../
+
+ 13. Move any 2 files you have created to any other folder:
+mv
+
+$ mv file_1.txt file_2.txt folder_1
+
+ 14. Copy any 2 files you created to any other folder:
+cp
+
+$ cp file_3.txt qwerty_1.json folder_2
+
+ 15. Find file by name:
+find
+
+$ find . -name qq1.txt
+./folder_5/qa_1/qq1.txt
+./qq1.txt
+
+ 16. View the content in real time (grep command), learn how it works:
+cat
+grep 
+
+1.
+$ cat file_3.txt
+Git
+GitBash
+GitHub
+Lesson
+
+2.
+$ grep Git file_3.txt
+Git
+GitBash
+GitHub
+
+3.
+$ grep -v GitBash file_3.txt
+Git
+GitHub
+Lesson
+
+4.
+$ grep -c GitBash file_3.txt
+1
+
+ 17. Output the first few lines from a text file:
+head -n
+
+$ head -n3 qq1.txt
+line 1
+line 2
+line 3
+
+ 18. Print the last few lines from a text file:
+tail -n
+
+$ tail -n4 qq1.txt
+line 4
+line 5
+line 6
+line 7
+
+ 19. View the contents of a long file (less command), learn how it works:
+less
+
+HELLO!
+
+Git Bash is an application that provides Git command line experience on the Operating System. It is a command-line shell for enabling git with the command line in the system. A shell is a terminal application used to interface with an operating system through written commands. Git Bash is a package that installs Bash, some common bash utilities, and Git on a Windows operating system. In Git Bash the user interacts with the repository and git elements through the commands.
+~
+~
+~
+(END)
+
+ 20. Display date and time:
+date
+
+$ date
+Mon May 23 23:23:55     2022
+
+=========
+
+ 21*. Send an HTTP request to the server
+http://162.55.220.72:5005/terminal-hw-request:
+curl
+
+$ curl http://162.55.220.72:5005/terminal-hw-request
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   283  100   283    0     0   2770      0 --:--:-- --:--:-- --:--:--  2801{
+  "Intro": "Hello!! This is your the first response from server",
+  "Tasks": {
+    "Task_1": "Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)",
+    "result": [
+      "Your_String",
+      "Your_number"
+    ]
+  }
+}
+
+$ curl "http://162.55.220.72:5005/get_method?name=Oksana&age=35"                           % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    24  100    24    0     0    286      0 --:--:-- --:--:-- --:--:--   292[
+  "Oksana",
+  "35"
+]
+
+ 22*. Write a script that will automatically execute steps 3, 4, 5, 6, 7, 8, 13:
+
+$ cat >> script.sh
+#!/bin/bash
+cd folder_5
+mkdir qa_1 qa_2 qa_3
+cd qa_1
+touch qq.txt qq1.txt qq2.txt qa.json qa1.json
+mkdir qa_4 qa_5 qa_6
+ls -la
+mv qa.json qa1.json qa_4/
