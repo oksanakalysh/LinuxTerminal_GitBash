@@ -1,16 +1,1 @@
-Linux terminal (GitBash) commands
-
- 1. Create folder dir_1
-mkdir dir_1
-
- 2. Go to the folder dir_1
- cd dir_1
-
- 3. Create folder inner_dir_1
-mkdir inner_dir_1
-
- 4. 
-
-
-
 
