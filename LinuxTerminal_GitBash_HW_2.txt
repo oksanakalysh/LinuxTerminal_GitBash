@@ -35,6 +35,19 @@ cd inner_dir_1
 cat > tf_3.txt
 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 
+ 9. Through cat add the line “the second 2” to the text file tf_3.txt
+cat >> tf_3.txt
+the second 2
 
+ 10. Through cat add the line “the sec 2” to the text file tf_3.txt
+cat >> -n tf_3.txt
+cat >> tf_3.txt
+the sec 2
 
+ 11. Through cat add the line “the sec 3” to the text file tf_2.txt
+cat >> -n ../tf_2.txt
+cat >> ../tf_2.txt
+the sec 3
+
+ 
 
