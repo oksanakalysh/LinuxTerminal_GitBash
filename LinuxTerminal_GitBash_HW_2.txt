@@ -9,7 +9,31 @@ mkdir dir_1
  3. Create folder inner_dir_1
 mkdir inner_dir_1
 
- 4. 
+ 4. See where you are
+pwd
+
+/f/QA_test/NEW/dir_1
+
+ 5. Being in the dir_1 folder, create an empty text file tf_1.txt
+touch tf_1.txt
+
+ 6. Being in the folder dir_1 through the cat command, create a text file tf_2.txt with the following lines:
+- the first 1
+- second 2
+- the third 3
+
+cat > tf_2.txt
+- the first 1
+- second 2
+- the third 3
+Сtrl+c
+
+ 7. Go to the folder inner_dir_1
+cd inner_dir_1
+
+ 8. Through cat create a text file tf_3.txt with any lines
+cat > tf_3.txt
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 
 
 
