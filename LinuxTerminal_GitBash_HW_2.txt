@@ -52,3 +52,22 @@ the sec 3
  12. Through cat add the line “the SeCoNd 2” to the text file tf_3.txt
 cat >> tf_3.txt
 the SeCond
+
+ 13. Through cat add the line “the seConD 2” to the text file tf_2.txt
+cat >> -n ../tf_2.txt
+cat >> ../tf_2.txt
+the seConD 2
+
+ 14. Create a text file tf_4.txt with 15 lines
+echo "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15" > tf_4.txt
+
+or:
+
+seq 15 > tf_4.txt
+
+ 15. Create a text file tF_5.txt with 13 lines
+echo "1 2 3 4 5 6 7 8 9 10 11 12 13" > tf_5.txt
+
+or:
+
+seq 13 > tf_5.txt
