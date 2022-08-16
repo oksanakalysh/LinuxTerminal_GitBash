@@ -71,3 +71,16 @@ echo "1 2 3 4 5 6 7 8 9 10 11 12 13" > tf_5.txt
 or:
 
 seq 13 > tf_5.txt
+
+ 16. List all files in a folder
+ls-la
+total 8
+drwxr-xr-x 1 oksanakalysh 197121 0 May 27 18:01 ./
+drwxr-xr-x 1 oksanakalysh 197121 0 May 27 18:18 ../
+-rw-r--r-- 1 oksanakalysh 197121 26 May 27 17:39 tf_2.txt
+-rw-r--r-- 1 oksanakalysh 197121 613 May 27 17:38 tf_3.txt
+-rw-r--r-- 1 oksanakalysh 197121 36 May 27 17:57 tf_4.txt
+-rw-r--r-- 1 oksanakalysh 197121 30 May 27 18:01 tf_5.txt
+
+ 17. Exit folder inner_dir_1
+cd../
