@@ -84,3 +84,17 @@ drwxr-xr-x 1 oksanakalysh 197121 0 May 27 18:18 ../
 
  17. Exit folder inner_dir_1
 cd../
+ 
+ 18. Output the contents of the tf_3.txt file into a term
+cat inner_dir_1/tf_3.txt
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularized in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.the second 2
+the sec 2
+the SeCond 2
+
+ 19. Find the path to the file tf_4.txt
+find -name tf_4.txt
+
+./tf_4.txt
+
+ 20. Clear the tf_4.txt file from the contents without deleting the file itself
+ >tf_4.txt
