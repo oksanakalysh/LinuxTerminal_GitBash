@@ -1,4 +1,4 @@
-Linux terminal (GitBash) commands
+Linux terminal (GitBash) commands:
 
  1. Create folder dir_1
 mkdir dir_1
