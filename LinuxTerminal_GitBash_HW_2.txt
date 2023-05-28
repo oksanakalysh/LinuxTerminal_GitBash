@@ -59,18 +59,42 @@ cat >> ../tf_2.txt
 the seConD 2
 
  14. Create a text file tf_4.txt with 15 lines
-echo "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15" > tf_4.txt
+cat > tf_4.txt
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
 
-or:
-
-seq 15 > tf_4.txt
+Ctrl+C
 
  15. Create a text file tF_5.txt with 13 lines
-echo "1 2 3 4 5 6 7 8 9 10 11 12 13" > tf_5.txt
+cat > tf_4.txt
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
 
-or:
-
-seq 13 > tf_5.txt
+Ctrl+C
 
  16. List all files in a folder
 ls-la
