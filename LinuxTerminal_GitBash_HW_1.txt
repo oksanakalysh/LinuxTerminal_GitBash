@@ -78,7 +78,7 @@ file_1.txt[+] [unix] (22:36 23/05/2022)                                  1,7 All
  11. + save and exit:
 esc + :wq
 
- 12. Exit folder one level up:
+ 12. Exit to the folder one level up:
 cd ../
 
 $ cd ../
