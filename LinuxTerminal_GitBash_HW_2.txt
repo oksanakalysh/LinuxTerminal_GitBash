@@ -107,7 +107,7 @@ drwxr-xr-x 1 oksanakalysh 197121 0 May 27 18:18 ../
 -rw-r--r-- 1 oksanakalysh 197121 30 May 27 18:01 tf_5.txt
 
  17. Exit to the folder inner_dir_1
-cd../
+cd..
  
  18. Output the contents of the tf_3.txt file into a term
 cat inner_dir_1/tf_3.txt
